@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="scoreboard">
+        <div id="score-title">
+            <div>ROCK</div>
+            <div>PAPER</div>
+            <div>SCISSORS</div>
+        </div>
+        <div class="score">
+            <div>COMPUTER</div>
+            <div>SCORE</div> 
+            <div class="score-value" id="computer-score"></div>
+        </div>
+        <div class="score">
+            <div>YOUR</div>
+            <div>SCORE</div>
+            <div class="score-value" id="user-score"></div>
+        </div>
+    </div>
+    <div id="game">
+        <a href="game.html">
+            <img class="game-images" id="paper" src="images/paper.png" style="margin-top: 200px;margin-left: 430px;">
+        </a>
+        <a href="game.html">
+            <img class="game-images" id="rock" src="images/rock.png" style="margin-left: 300px;">
+        </a>
+        <a href="game.html">
+            <img class="game-images" id="scissor" src="images/scissor.png" style="margin-left: 573px;">
+        </a>        
+        <img class="game-images line" src="images/Line 1.png" style="margin-top: 75px; margin-left: 453px;">
+        <img class="game-images line" src="images/Line 2.png" style="margin-top: 130px;margin-left: 550px;z-index: -1;">
+        <img class="game-images line" src="images/Line 3.png" style="margin-top: 130px; margin-left: 410px;z-index: -1;">
+    </div>
+    <div id="rules">
+        
+        
+    </div>
+
+    <img id="game-rules" src="images/game-rules.png">
+    <button class="bottom-btn" id="rules-btn">RULES</button>
+
+    <script src="script.js"></script>
+</body>
+</html>

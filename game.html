@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="scoreboard">
+        <div id="score-title">
+            <div>ROCK</div>
+            <div>PAPER</div>
+            <div>SCISSORS</div>
+        </div>
+        <div class="score">
+            <div>COMPUTER</div>
+            <div>SCORE</div> 
+            <div class="score-value" id="computer-score"></div>
+        </div>
+        <div class="score">
+            <div>YOUR</div>
+            <div>SCORE</div>
+            <div class="score-value" id="user-score"></div>
+        </div>
+    </div>
+    <div id="game-result">
+        <div id="user-choice-loc">
+            <p>YOU PICKED</p>
+            
+
+        </div>
+        <div id="result-output">
+            <h1 id="result-string"></h1>
+            <p id="against-pc">against PC</p>
+            <button id="play-again-btn">PLAY AGAIN</button>
+
+        </div>
+        <div id="pc-choice-loc">
+            <p>PC PICKER</p>
+
+        </div>
+    </div>
+    <div id="rules">
+        
+        
+    </div>
+
+    <img id="game-rules" src="images/game-rules.png">
+    <button class="bottom-btn extra-margin" id="rules-btn">RULES</button>
+    <button class="bottom-btn" id="next-btn">NEXT</button>
+
+    <script src="game.js"></script>
+</body>
+</html>
