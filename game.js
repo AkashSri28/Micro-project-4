@@ -1,4 +1,5 @@
 let gameRules = document.getElementById('game-rules');
+let rulesBtn = document.getElementById('rules-btn');
 gameRules.style.display = "none";
 
 let choice = ['rock', 'paper', 'scissor'];
@@ -10,6 +11,14 @@ let result;
 document.getElementById("user-score").innerText = Number(localStorage.getItem("userScore"));
 document.getElementById("computer-score").innerText = Number(localStorage.getItem("computerScore"));
 
+rulesBtn.addEventListener("click", function(){
+    if(gameRules.style.display === "none"){
+        gameRules.style.display = "block";
+    }
+    else{
+        gameRules.style.display = "none";
+    }
+})
 
 document.getElementById("play-again-btn").addEventListener("click", function(){
     location.href = "index.html";

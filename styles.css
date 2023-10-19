@@ -20,6 +20,11 @@ body{
     margin-right: 110px;
 }
 
+.final-img{
+    padding: 20px;
+    margin: auto;
+}
+
 .game-images{
     position: absolute;
     margin-left: 400px;
@@ -37,6 +42,12 @@ body{
 
 .score-value{
     font-size: 70px;
+}
+
+#final-images{
+    display:block;
+    margin: auto;
+    width: 50%;
 }
 
 #game{
@@ -59,6 +70,10 @@ body{
     text-align: center;
     grid-template-columns: auto auto auto;
     justify-content: center;
+}
+
+#hurray-txt{
+    
 }
 
 #play-again-btn{
