@@ -1,5 +1,7 @@
 let gameRules = document.getElementById('game-rules');
 let rulesBtn = document.getElementById('rules-btn');
+let nextBtn = document.getElementById('next-btn');
+
 gameRules.style.display = "none";
 
 let choice = ['rock', 'paper', 'scissor'];
@@ -10,6 +12,10 @@ let result;
 
 document.getElementById("user-score").innerText = Number(localStorage.getItem("userScore"));
 document.getElementById("computer-score").innerText = Number(localStorage.getItem("computerScore"));
+
+function hideNextButton(){
+    nextBtn.style.display = "none";
+}
 
 rulesBtn.addEventListener("click", function(){
     if(gameRules.style.display === "none"){
@@ -43,12 +49,14 @@ function displayResult(userChoice, pcChoice){
     if(userChoice === pcChoice){
         result = "TIE UP";
         againstPC.style.display = "none";
+        hideNextButton();
     }
     else{
         if(choice[userChoice] === "rock"){
             if(choice[pcChoice] === "paper"){
                 result = "YOU LOST";
                 updateScore('computer');
+                hideNextButton();
             }
             else{
                 result = "YOU WIN";
@@ -58,7 +66,8 @@ function displayResult(userChoice, pcChoice){
         else if(choice[userChoice] === "paper"){
             if(choice[pcChoice] === "scissor"){
                 result = "YOU LOST";
-                updateScore('computer')
+                updateScore('computer');
+                hideNextButton();
             }
             else{
                 result = "YOU WIN";
@@ -69,6 +78,7 @@ function displayResult(userChoice, pcChoice){
             if(choice[pcChoice] === "rock"){
                 result = "YOU LOST";
                 updateScore('computer');
+                hideNextButton();
             }
             else{
                 result = "YOU WIN";
